@@ -13,6 +13,6 @@ current_dir = Path.cwd().joinpath('files')
 for folder in current_dir.iterdir():
     for i, f in enumerate(folder.iterdir()):
         b = f.parent
-        if f.suffix == '.txt': # rename only files that have the .txt extension
-            f = f.rename(b.joinpath('file {:04d}'.format(i) + '.txt'))
+        if f.suffix == '.jpeg': # rename only files that have the .txt extension
+            f = f.rename(b.joinpath('{:04d}'.format(i) + '.jpeg'))
 
