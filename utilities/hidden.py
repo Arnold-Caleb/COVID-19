@@ -18,11 +18,11 @@ def rename_files(folder_path):
         for i, f in enumerate(folder.iterdir()):
             b = f.parent
             if f.suffix == '.jpeg': # rename files that have the .jpeg extension
-                f = f.rename(b.joinpath('{:04d}'.format(i) + '.jpeg'))
+                f = f.rename(b.joinpath('{:04d}'.format(i+1) + '.jpeg'))
             elif f.suffix == '.jpg': # rename files that have .jpg extension
-                f = f.rename(b.joinpath('{:04d}'.format(i) + '.jpg'))    
+                f = f.rename(b.joinpath('{:04d}'.format(i+1) + '.jpg'))    
             elif f.suffix == '.png': # rename files that have .png extension
-                f = f.rename(b.joinpath('{:04d}'.format(i) + '.png'))
+                f = f.rename(b.joinpath('{:04d}'.format(i+1) + '.png'))
             else:
                 continue
 
