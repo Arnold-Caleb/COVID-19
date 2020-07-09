@@ -9,6 +9,7 @@ def plotImages(images_arr):
     
     for img, ax in zip(images_arr, axes):
         ax.imshow(img)
+        ax.axis('off')
     plt.tight_layout()
     plt.show()
 
