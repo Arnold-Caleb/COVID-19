@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 # Default folders containing the files to be renamed
-TEST, TRAIN = 'datasets/test', 'datasets/train'
+TEST, TRAIN, VAL = 'datasets/test', 'datasets/train', 'datasets/val'
 
 '''
 Navigate to the directory containing the files that contain files that need to be renamed
@@ -28,3 +28,4 @@ def rename_files(folder_path):
 
 rename_files(TEST)
 rename_files(TRAIN)
+rename_files(VAL)
